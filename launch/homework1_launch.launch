@@ -1,4 +1,4 @@
 <launch>
-	<node pkg="homework1" type="talker.py" name="Talker_homework1_ros" output="screen">
+	<node pkg="homework1_ros" type="talker.py" name="Talker_homework1_ros" output="screen">
 	</node>
 </launch>
