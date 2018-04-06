@@ -1,4 +1,5 @@
 <launch>
-	<node pkg="homework1_ros" type="talker.py" name="Talker_homework1_ros" output="screen">
-	</node>
+	<node name="talker_homework1" pkg="homework1_ros" type="talker.py" output="screen" launch-prefix="xterm -e" />
+	<node name="filter_homework1" pkg="homework1_ros" type="filter.py" output="screen" launch-prefix="xterm -e" />
+	<node name="listener_homework1" pkg="homework1_ros" type="listener.py" output="screen" launch-prefix="xterm -e" />
 </launch>
