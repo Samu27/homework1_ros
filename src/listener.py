@@ -10,13 +10,15 @@ print_mode = "a"
 
 def callback_talker(data):
 	if print_mode == "a":
-		rospy.loginfo("Info studente: %s, %s, %s\n", data.nome, data.eta, data.corso_laurea)
+		rospy.loginfo('Info studente:\n nome:\t\t{}\n eta:\t\t{} \
+			\n corso laurea:\t{}\n'.format(data.nome, \
+				data.eta, data.corso_laurea))
 	if print_mode == "n":
-		rospy.loginfo("Nome: %s\n", data.nome)
+		rospy.loginfo('Info studente:\n nome:\t\t{}\n'.format(data.nome))
 	if print_mode == "e":
-		rospy.loginfo("Eta: %s\n", data.eta)
+		rospy.loginfo('Info studente\n eta:\t\t{}\n'.format(data.eta))
 	if print_mode == "c":
-		rospy.loginfo("Corso di laurea: %s\n", data.corso_laurea)
+		rospy.loginfo('Info studente\n corso laurea:\t{}\n'.format(data.corso_laurea))
 	
 
 def callback_filter(data):

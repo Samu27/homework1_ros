@@ -15,7 +15,9 @@ def talker():
 	while not rospy.is_shutdown():
 		student = random_student.randStudent()
 
-		rospy.loginfo(student)
+		rospy.loginfo('Info studente:\n nome:\t\t{}\n eta:\t\t{}\
+			\n corso laurea:\t{}\n'.format(student.nome, \
+				student.eta, student.corso_laurea))
 		pub.publish(student)
 		rate.sleep()
 
