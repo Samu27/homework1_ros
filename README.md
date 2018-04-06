@@ -1,8 +1,8 @@
 # ROS Homework1
 
 Si realizzi un package ROS contenente degli opportuni nodi per poter svolgere i compiti seguenti:
-	* • Un nodo pubblica, 1 volta al secondo, un messaggio contenente un nome, una età, e un corso di laurea 
-	* • Un nodo permette di selezionare da tastiera quale parte del messaggio verrà mostrata a video (si veda la pagina seguente per i dettagli)
+	* Un nodo pubblica, 1 volta al secondo, un messaggio contenente un nome, una età, e un corso di laurea 
+	* Un nodo permette di selezionare da tastiera quale parte del messaggio verrà mostrata a video (si veda la pagina seguente per i dettagli)
 	* • Un nodo mostra a video la parte del messaggio selezionata
 
 Il nodo che permette di selezionare da tastiera quale parte del messaggio mostrare dovrà comportarsi nel modo seguente:
