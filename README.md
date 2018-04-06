@@ -30,7 +30,7 @@ Il progetto si divide in tre nodi:
 Ci sono tre modi per eseguire il programma:
  - launcher 
  - script
- - avvio nodi da terminale
+ - avvio singoli nodi
 
 
 #### Avvio tramite launcher
@@ -46,7 +46,7 @@ cd ~/catkin_ws/src/homework1_ros/
 ./script/launcher.sh
 ```
 
-#### Avvio tramite launcher
+#### Avvio singoli nodi
 
 Terminale1 (DEVE ESSERE ESEGUITO COME PRIMO):
 ```
@@ -68,10 +68,15 @@ Terminale4:
 rosrun homework1_ros listener.py
 ```
 
+## Screenshot
+
+![Screenshot](images/screenshot.png)
+Screenshot progetto. Nodi avviati sigolarmente.
+
 
 ## Autore
 
-* **Mori Samuele** - [Samu27](https://github.com/Samu27)
+**Mori Samuele** - [Samu27](https://github.com/Samu27)
 
 
 ## Licenza
