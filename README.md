@@ -1,4 +1,6 @@
-# ROS Homework1
+# Homework1 per Laboratorio Ciberfisico UNIVR
+
+## Consegna
 
 Si realizzi un package ROS contenente degli opportuni nodi per poter svolgere i compiti seguenti:
  - Un nodo pubblica, 1 volta al secondo, un messaggio contenente un nome, una età, e un corso di laurea 
@@ -11,12 +13,68 @@ Il nodo che permette di selezionare da tastiera quale parte del messaggio mostra
  - ‘e’ mostrerà solo l’età
  - ‘c’ mostrerà solo il corso di laure
 
+## Scelte progettuali
+
+Il progetto si divide in tre nodi:
+ - Talker pubblica i messaggi contenenti le informazioni degli studenti sul topic "students"
+ - Filter riceve gli input dall'utente e invia sul topic "filter" i comandi
+ - Listener riceve messaggi sui topic "students" e "filter"
+ e stampa i dati filtrati
+
+## Grafico
+
+![Screenshot](images/rosgraph.png)
+
+## Come eseguire il programma
+
+Ci sono tre modi per eseguire il programma:
+ - launcher 
+ - script
+ - avvio nodi da terminale
 
 
-# Grafico nodi
+#### Avvio tramite launcher
 
-![alt text](https://raw.githubusercontent.com/Samu27/homework1_ros/graph/rosgraph.png)
+```
+roslaunch homework1_ros homework1_launch.launch
+```
 
-![alt text](http:/https://github.com/Samu27/homework1_ros.git/graph/rosgraph.png)
+#### Avvio tramite script
 
-![Screenshot](graph/rosgraph.png)
+```
+cd ~/catkin_ws/src/homework1_ros/
+./script/launcher.sh
+```
+
+#### Avvio tramite launcher
+
+Terminale1 (DEVE ESSERE ESEGUITO COME PRIMO):
+```
+roscore
+```
+
+Terminale2:
+```
+rosrun homework1_ros talker.py
+```
+
+Terminale3:
+```
+rosrun homework1_ros filter.py
+```
+
+Terminale4:
+```
+rosrun homework1_ros listener.py
+```
+
+
+## Autore
+
+* **Mori Samuele** - [Samu27](https://github.com/Samu27)
+
+
+## Licenza
+
+Questo progetto è sotto la licenza GPL_v3 - guarda il file [LICENSE.md](LICENSE.md) per ulteriori informazioni
+
