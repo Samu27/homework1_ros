@@ -11,6 +11,13 @@ Il nodo che permette di selezionare da tastiera quale parte del messaggio mostra
 	* • ‘e’ mostrerà solo l’età
 	* • ‘c’ mostrerà solo il corso di laure
 
+
+Markup : * Bullet list
+              * Nested bullet
+                  * Sub-nested bullet etc
+          * Bullet list item 2
+
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
