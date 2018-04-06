@@ -20,13 +20,14 @@ def callback_talker(data):
 	
 
 def callback_filter(data):
-	#rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
+	rospy.loginfo("Print_mode = %s\n", data.data)
+
 	global print_mode
 	print_mode = data.data
 
 
 def listener():
-	rospy.init_node('listener', anonymous=True)
+	rospy.init_node('Listener', anonymous=True)
 
 	rospy.Subscriber("students", Student, callback_talker)
 	rospy.Subscriber("filter", String, callback_filter)

@@ -9,7 +9,7 @@ def talker():
 	student = Student()
 
 	pub = rospy.Publisher('students', Student, queue_size=10)
-	rospy.init_node('talker', anonymous=True)
+	rospy.init_node('Talker', anonymous=True)
 	rate = rospy.Rate(1) # 1hz -> 1sec
 
 	while not rospy.is_shutdown():
