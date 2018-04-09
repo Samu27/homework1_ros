@@ -1,4 +1,6 @@
-# Homework1 per Laboratorio Ciberfisico UNIVR
+# Homework1 - Laboratorio Ciberfisico UNIVR
+
+Primo esercizio per il Corso di Laboratorio Ciberfisico, Università di Verona.
 
 ## Consegna
 
@@ -18,8 +20,7 @@ Il nodo che permette di selezionare da tastiera quale parte del messaggio mostra
 Il progetto si divide in tre nodi:
  - Talker pubblica i messaggi contenenti le informazioni degli studenti sul topic "students"
  - Filter riceve gli input dall'utente e invia sul topic "filter" i comandi
- - Listener riceve messaggi sui topic "students" e "filter"
- e stampa i dati filtrati
+ - Listener riceve messaggi sui topic "students" e "filter" e stampa i dati filtrati
 
 ## Grafico
 
@@ -48,7 +49,7 @@ cd ~/catkin_ws/src/homework1_ros/
 
 #### Avvio singoli nodi
 
-Terminale1 (DEVE ESSERE ESEGUITO COME PRIMO):
+Terminale1 (**deve essere eseguito per primo**):
 ```
 roscore
 ```
