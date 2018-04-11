@@ -24,7 +24,7 @@ Il progetto si divide in tre nodi:
 
 ## Grafico
 
-![Screenshot](images/rosgraph.png)
+TL;DR![Screenshot](images/rosgraph.png)
 
 ## Come eseguire il programma
 
