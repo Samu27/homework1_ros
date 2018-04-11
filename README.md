@@ -25,7 +25,7 @@ Il progetto si divide in tre nodi:
 ## Grafico
 
 <p align="center">
-![Screenshot](images/rosgraph.png)
+ ![Screenshot](images/rosgraph.png)
 </p>
 ## Come eseguire il programma
 
@@ -72,9 +72,10 @@ rosrun homework1_ros listener.py
 
 ## Screenshot
 
+<p align="center">
 ![Screenshot](images/screenshot.png)
 Screenshot progetto. Nodi avviati sigolarmente.
-
+</p>
 
 ## Autore
 
