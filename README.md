@@ -1,6 +1,6 @@
 # Homework1 - Laboratorio Ciberfisico UNIVR
 
-Primo esercizio per il Corso di Laboratorio Ciberfisico, Università di Verona.
+Primo esercizio del corso Laboratorio Ciberfisico, Università di Verona.
 
 ## Consegna
 
@@ -17,10 +17,12 @@ Il nodo che permette di selezionare da tastiera quale parte del messaggio mostra
 
 ## Scelte progettuali
 
+Linguaggio utilizzato: Python.
 Il progetto si divide in tre nodi:
- - Talker pubblica i messaggi contenenti le informazioni degli studenti sul topic "students"
+ - Talker pubblica sul topic "students" i messaggi contenenti le informazioni degli studenti
  - Filter riceve gli input dall'utente e invia sul topic "filter" i comandi
  - Listener riceve messaggi sui topic "students" e "filter" e stampa i dati filtrati
+E' presente un quarto file (random_student.py), esso genera uno studente casuale. E' stato creato per dare casualità ai messaggi inviati dal nodo talker.
 
 ## Grafico
 
