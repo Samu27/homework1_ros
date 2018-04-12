@@ -17,7 +17,7 @@ Il nodo che permette di selezionare da tastiera quale parte del messaggio mostra
 
 ## Scelte progettuali
 
-Linguaggio utilizzato: Python.
+Linguaggio utilizzato: Python.  
 Il progetto si divide in tre nodi:
  - Talker pubblica sul topic "students" i messaggi contenenti le informazioni degli studenti
  - Filter riceve gli input dall'utente e invia sul topic "filter" i comandi
