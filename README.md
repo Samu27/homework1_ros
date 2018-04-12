@@ -21,7 +21,7 @@ Linguaggio utilizzato: Python.
 Il progetto si divide in tre nodi:
  - Talker pubblica sul topic "students" i messaggi contenenti le informazioni degli studenti
  - Filter riceve gli input dall'utente e invia sul topic "filter" i comandi
- - Listener riceve messaggi sui topic "students" e "filter" e stampa i dati filtrati
+ - Listener riceve messaggi sui topic "students" e "filter" e stampa i dati filtrati  
 E' presente un quarto file (random_student.py), esso genera uno studente casuale. E' stato creato per dare casualità ai messaggi inviati dal nodo talker.
 
 ## Grafico
