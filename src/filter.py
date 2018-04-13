@@ -20,6 +20,7 @@ def signal_term_handler(signum, frame):
 
 
 def filter():
+	''' Nodo filter '''
 	pub = rospy.Publisher('filter', String, queue_size=10)
 	rospy.init_node('Filter', anonymous=True)
 
