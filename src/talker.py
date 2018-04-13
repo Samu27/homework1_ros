@@ -1,5 +1,10 @@
 #!/usr/bin/env python2
 
+'''
+Nodo talker.
+Invia Student, generati casualmente, sul topic "student".
+'''
+
 import rospy
 import random_student
 from homework1.msg import Student
