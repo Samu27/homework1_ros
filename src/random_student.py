@@ -1,25 +1,34 @@
 #!/usr/bin/env python2
 
+'''
+Genera uno studente casuale.
+Creato per dare casualità ai messaggi inviato dal nodo talker  
+'''
+
 from homework1.msg import Student
 from random import randint, seed
 from time import time
 
 
 def randName():
+	'''Genera un nome casuale'''
 	global names
 	return names.get(randint(1,30))
 
 
 def randAge():
+	'''Genera un eta' casuale, da 20 a 70 (estremi compresi)'''
 	return randint(20,70)
 
 
 def randDegreeCourse():
+	'''Genera un corso di studi casuale'''
 	global deegree_courses
 	return deegree_courses.get(randint(1,20))
 
 
 def randStudent():
+	'''Genera uno studente casuale'''
 	seed(time())
 
 	student = Student()
@@ -29,6 +38,7 @@ def randStudent():
 	return student
 
 
+# Lista dei 30 nomi più comuni (1-15 nomi femminili, 16-30 maschili)
 names = {
 	1:"Sofia",
 	2:"Aurora",
@@ -61,7 +71,7 @@ names = {
 	29:"Antonio",
 	30:"Federico"}
 
-
+# Lista contenente 20 corsi di studi
 deegree_courses= { 
 	1:"Laurea in Beni culturali",
 	2:"Laurea in Bioinformatica",
