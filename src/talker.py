@@ -11,6 +11,7 @@ from homework1.msg import Student
 
 
 def talker():
+	''' Nodo talker '''
 	student = Student()
 
 	pub = rospy.Publisher('students', Student, queue_size=10)
@@ -18,11 +19,13 @@ def talker():
 	rate = rospy.Rate(1) # 1hz -> 1sec
 
 	while not rospy.is_shutdown():
+		# Generazione studente casuale
 		student = random_student.randStudent()
 
 		rospy.loginfo('Info studente:\n nome:\t\t{}\n eta:\t\t{}\
 			\n corso laurea:\t{}\n'.format(student.nome, \
 				student.eta, student.corso_laurea))
+
 		pub.publish(student)
 		rate.sleep()
 

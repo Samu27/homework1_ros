@@ -46,4 +46,8 @@ if __name__ == '__main__':
 	signal.signal(signal.SIGINT, signal_term_handler)
 	signal.signal(signal.SIGQUIT, signal_term_handler)
 	signal.signal(signal.SIGTSTP, signal_term_handler)
-	filter()
+
+	try:
+		filter()
+	except rospy.ROSInterruptException:
+		pass
