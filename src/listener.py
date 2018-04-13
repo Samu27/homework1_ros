@@ -1,10 +1,5 @@
 #!/usr/bin/env python2
 
-'''
-Nodo listener.
-Riceve messaggi dai topic "students" e "listener" e stampa i dati filtrati.
-'''
-
 import rospy
 from homework1.msg import Student
 from std_msgs.msg import String
@@ -13,8 +8,7 @@ from std_msgs.msg import String
 print_mode = "a"
 
 
-def callback_students(data):
-	''' Callback del tocpi students'''
+def callback_talker(data):
 	if print_mode == "a":
 		rospy.loginfo('Info studente:\n nome:\t\t{}\n eta:\t\t{} \
 			\n corso laurea:\t{}\n'.format(data.nome, \
@@ -28,21 +22,19 @@ def callback_students(data):
 	
 
 def callback_filter(data):
-	''' Callback del topic filter '''
 	rospy.loginfo("Print_mode = %s\n", data.data)
 
-	# Cambia modilita' di stampa
 	global print_mode
 	print_mode = data.data
 
 
 def listener():
-	''' Nodo listener '''
 	rospy.init_node('Listener', anonymous=True)
 
-	rospy.Subscriber("students", Student, callback_students)
+	rospy.Subscriber("students", Student, callback_talker)
 	rospy.Subscriber("filter", String, callback_filter)
 
+	# spin() simply keeps python from exiting until this node is stopped
 	rospy.spin()
 
 
