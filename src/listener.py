@@ -1,5 +1,10 @@
 #!/usr/bin/env python2
 
+'''
+Nodo listener.
+Riceve messaggi dai topic "students" e "listener" e stampa i dati filtrati.
+'''
+
 import rospy
 from homework1.msg import Student
 from std_msgs.msg import String
