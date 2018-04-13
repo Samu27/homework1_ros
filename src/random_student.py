@@ -2,7 +2,7 @@
 
 '''
 Genera uno studente casuale.
-Creato per dare casualità ai messaggi inviato dal nodo talker  
+Creato per dare casualità ai messaggi inviati dal nodo talker  
 '''
 
 from homework1.msg import Student
