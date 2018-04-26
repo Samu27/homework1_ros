@@ -6,7 +6,7 @@ Genera uno studente casuale.
 Creato per dare casualità ai messaggi inviati dal nodo talker  
 '''
 
-from homework1.msg import Student
+from homework1_ros.msg import Student
 from random import randint, seed
 from time import time
 
