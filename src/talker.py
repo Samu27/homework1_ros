@@ -8,7 +8,7 @@ Invia Student, generati casualmente, sul topic "student".
 
 import rospy
 import random_student
-from homework1.msg import Student
+from homework1_ros.msg import Student
 
 
 def talker():
