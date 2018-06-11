@@ -1,4 +1,4 @@
-# Homework1 - Laboratorio Ciberfisico
+# Homework 1 - Laboratorio Ciberfisico
 
 Primo homework del corso Laboratorio Ciberfisico, Università degli studi di Verona.
 
